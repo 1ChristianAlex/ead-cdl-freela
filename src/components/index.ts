@@ -9,3 +9,8 @@ export { default as ContentOpacity } from "./ContentOpacity";
 export { default as TitleSection } from "./TitleSection";
 export { default as ListDot } from "./ListDot";
 export { default as CardItem } from "./CardItem";
+export { default as ImageText } from "./ImageText";
+export { default as SectionBubleFull } from "./SectionBubleFull";
+export { default as TextBuble } from "./TextBuble";
+export { default as SectionWindowHaf } from "./SectionWindowHaf";
+export { default as CarosselText } from "./CarosselText";

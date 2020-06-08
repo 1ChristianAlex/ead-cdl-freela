@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Colors } from "../../styles/colors";
-import { imagens } from "../../assets";
 
 interface IContentMargin {
   bgColor?: string;
