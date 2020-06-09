@@ -8,8 +8,9 @@ interface ISectionWindow {
 
 const SectionWindow: FC<ISectionWindow> = ({ children, bgColor, bgImage }) => (
   <SuperiorContainer bgColor={bgColor}>
-    {bgImage && <BgImage src={bgImage} />}
-    <ContainerFull>{children}</ContainerFull>
+    <BgImage bgImage={bgImage}>
+      <ContainerFull>{children}</ContainerFull>
+    </BgImage>
   </SuperiorContainer>
 );
 

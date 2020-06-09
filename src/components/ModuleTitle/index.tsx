@@ -1,11 +1,6 @@
 import React, { FC } from "react";
 import { Row, Col } from "react-bootstrap";
-import {
-  ImageModule,
-  ImageTitle,
-  ImageText,
-  ImageTextContainer,
-} from "./style";
+import { ImageModule } from "./style";
 
 interface IModuleTitle {
   image?: string;
@@ -19,12 +14,6 @@ const ModuleTitle: FC<IModuleTitle> = ({ image, imageText, imageTitle }) => {
       <Col md={6} />
       <Col md={6}>
         <ImageModule src={image} />
-        {/* {(imageTitle || imageText) && (
-          <ImageTextContainer>
-            {imageTitle && <ImageTitle>{imageTitle.toUpperCase()}</ImageTitle>}
-            {imageText && <ImageText>{imageText}</ImageText>}
-          </ImageTextContainer>
-        )} */}
       </Col>
     </Row>
   );

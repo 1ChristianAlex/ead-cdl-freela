@@ -27,11 +27,7 @@ const ModuleOne: React.FC = () => {
     <>
       <Header />
       <SectionWindow bgImage={imagens.estudante}>
-        <ModuleTitle
-          image={imagens.blobAmareloAzul}
-          imageTitle="Modulo 1"
-          imageText="Fundamentos do Marketing Digital"
-        />
+        <ModuleTitle image={imagens.blobAmareloAzul} />
       </SectionWindow>
       <SectionWindow className="mt-5">
         <ContentTwo
@@ -105,7 +101,9 @@ const ModuleOne: React.FC = () => {
               </Row>
             </TextConteiner>
           }
-          ColRightContent={<Image src={imagens.setaRight} className="vh-100" />}
+          ColRightContent={
+            <Image src={imagens.setaRight} fluid className="vh-100" />
+          }
         />
       </SectionWindowFull>
       <SectionWindowFull bgColor="transparent">
@@ -325,7 +323,7 @@ const ModuleOne: React.FC = () => {
       <SectionBubleFull bgImage={imagens.planeta}>
         <TextBuble
           positionY={-1}
-          right={-40}
+          right={-38}
           color={Colors.black}
           bgColor={Colors.white}
           textClass="w-50"

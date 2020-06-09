@@ -17,8 +17,9 @@ const SectionWindow: FC<ISectionWindow> = ({
     className={`d-flex  align-items-center ${className || ""}`}
     bgColor={bgColor}
   >
-    {bgImage && <BgImage src={bgImage} />}
-    <ContainerFull>{children}</ContainerFull>
+    <BgImage bgImage={bgImage}>
+      <ContainerFull>{children}</ContainerFull>
+    </BgImage>
   </SuperiorContainer>
 );
 

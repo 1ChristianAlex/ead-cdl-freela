@@ -7,11 +7,17 @@ export const ContainerFull = styled(Container)`
   z-index: 2;
   position: relative;
 `;
-export const BgImage = styled.img`
-  position: absolute;
-  height: 100vh;
+export const BgImage = styled.div<any>`
   width: 100vw;
   z-index: 1;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(${props => props.bgImage});
+  @media (max-width: 991px) {
+    width: 100%;
+  }
 `;
 interface ISuperiorContainer {
   bgColor?: string;

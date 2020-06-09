@@ -23,6 +23,9 @@ import nordwood from "./imagens/nordwood-themes-yyMJNPgQ-X8-unsplash.png";
 import trajetoria from "./imagens/trajetoria-consumidor.png";
 import compras from "./vetores/compras_digitais_vetor.png";
 import celebrating from "./vetores/undraw_celebrating_bol5.svg";
+import bemVindo from "./vetores/bem-vindo_vetor.png";
+import damas from "./imagens/jeshoots-com-fzOITuS1DIQ-unsplash.jpg";
+import setaWhite from "./imagens/hello-i-m-nik-MAgPyHRO0AA-unsplash.jpg";
 
 const imagens = {
   estudante,
@@ -46,6 +49,9 @@ const imagens = {
   trajetoria,
   compras,
   celebrating,
+  bemVindo,
+  damas,
+  setaWhite,
 };
 const icons = {
   trolley,
