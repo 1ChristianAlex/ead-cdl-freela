@@ -9,9 +9,10 @@ interface ICarrouselText {
     title?: string;
     content: string[];
   }[];
+  color?: string;
 }
 
-const CarrouselText: FC<ICarrouselText> = ({ carouselItem }) => {
+const CarrouselText: FC<ICarrouselText> = ({ carouselItem, color }) => {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -30,7 +31,7 @@ const CarrouselText: FC<ICarrouselText> = ({ carouselItem }) => {
             <Row className="text-left">
               <Col md={12}>
                 {itemCa.title && (
-                  <TitleSection classTitle="text-left p-2" color={Colors.white}>
+                  <TitleSection classTitle="text-left p-2" color={color}>
                     {itemCa.title.toLocaleUpperCase()}
                   </TitleSection>
                 )}
@@ -38,8 +39,8 @@ const CarrouselText: FC<ICarrouselText> = ({ carouselItem }) => {
               {itemCa.content.map((textItem, indexTExt) => {
                 return (
                   <Col md={12} key={indexTExt * 6}>
-                    <Text colors={Colors.white} size={18} className="p-2">
-                      {textItem}
+                    <Text colors={color} size={18} className="p-2">
+                      <div dangerouslySetInnerHTML={{ __html: textItem }} />
                     </Text>
                   </Col>
                 );
