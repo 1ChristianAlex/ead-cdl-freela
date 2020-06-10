@@ -6,7 +6,7 @@ import { Colors } from "../../styles/colors";
 
 interface ICarrouselText {
   carouselItem: {
-    title: string;
+    title?: string;
     content: string[];
   }[];
 }
@@ -29,9 +29,11 @@ const CarrouselText: FC<ICarrouselText> = ({ carouselItem }) => {
           <Carousel.Item key={`ca-${indexSlide}`} className="p-5">
             <Row className="text-left">
               <Col md={12}>
-                <TitleSection classTitle="text-left p-2" color={Colors.white}>
-                  {itemCa.title.toLocaleUpperCase()}
-                </TitleSection>
+                {itemCa.title && (
+                  <TitleSection classTitle="text-left p-2" color={Colors.white}>
+                    {itemCa.title.toLocaleUpperCase()}
+                  </TitleSection>
+                )}
               </Col>
               {itemCa.content.map((textItem, indexTExt) => {
                 return (
