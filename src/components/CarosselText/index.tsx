@@ -28,10 +28,10 @@ const CarrouselText: FC<ICarrouselText> = ({ carouselItem, color }) => {
       {carouselItem.map((itemCa, indexSlide) => {
         return (
           <Carousel.Item key={`ca-${indexSlide}`} className="p-5">
-            <Row className="text-left">
+            <Row className="">
               <Col md={12}>
                 {itemCa.title && (
-                  <TitleSection classTitle="text-left p-2" color={color}>
+                  <TitleSection classTitle=" p-2" color={color}>
                     {itemCa.title.toLocaleUpperCase()}
                   </TitleSection>
                 )}
