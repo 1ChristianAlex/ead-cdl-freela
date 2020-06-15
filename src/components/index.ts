@@ -15,3 +15,4 @@ export { default as TextBuble } from "./TextBuble";
 export { default as SectionWindowHaf } from "./SectionWindowHaf";
 export { default as CarosselText } from "./CarosselText";
 export { default as ImageFullWidth } from "./ImageFullWidth";
+export { default as ImageResponsive } from "./ImageResponsive";

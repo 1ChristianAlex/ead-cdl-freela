@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
-import { Image } from "react-bootstrap";
 import {
   ImageFullWidth,
   Header,
@@ -9,6 +8,7 @@ import {
   ContentTwo,
   TextConteiner,
   CarosselText,
+  ImageResponsive,
 } from "../components";
 import { Colors } from "../styles/colors";
 
@@ -86,7 +86,9 @@ const ModuleTree: React.FC<any> = ({ data }) => {
                     />
                   </TextConteiner>
                 }
-                ColRightContent={<Image src={ph} className="vh-100 w-100" />}
+                ColRightContent={
+                  <ImageResponsive src={ph} className="vh-100 w-100" />
+                }
               />
             </SectionWindowFull>
           )}
@@ -129,7 +131,9 @@ const ModuleTree: React.FC<any> = ({ data }) => {
                     />
                   </TextConteiner>
                 }
-                ColLeftContent={<Image src={ph} className="vh-100 w-100" />}
+                ColLeftContent={
+                  <ImageResponsive src={ph} className="vh-100 w-100" />
+                }
               />
             </SectionWindowFull>
           )}
@@ -168,7 +172,9 @@ const ModuleTree: React.FC<any> = ({ data }) => {
                     />
                   </TextConteiner>
                 }
-                ColRightContent={<Image src={ph} className="vh-100 w-100" />}
+                ColRightContent={
+                  <ImageResponsive src={ph} className="vh-100 w-100" />
+                }
               />
             </SectionWindowFull>
           )}
@@ -212,7 +218,9 @@ const ModuleTree: React.FC<any> = ({ data }) => {
                     />
                   </TextConteiner>
                 }
-                ColRightContent={<Image src={ph} className="vh-100 w-100" />}
+                ColRightContent={
+                  <ImageResponsive src={ph} className="vh-100 w-100" />
+                }
               />
             </SectionWindowFull>
           )}

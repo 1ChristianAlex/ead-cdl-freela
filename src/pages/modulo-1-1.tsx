@@ -12,6 +12,7 @@ import {
 } from "../components";
 import { Colors } from "../styles/colors";
 import { imagens } from "../assets";
+import { ImageResp } from "../components/ImageResponsive/style";
 
 export const query = graphql`
   {
@@ -98,9 +99,7 @@ const ModuleOne: React.FC<any> = ({ data }) => {
                     />
                   </TextConteiner>
                 }
-                ColRightContent={
-                  <Image src={imagens.nordwood} className="vh-100 w-100" />
-                }
+                ColRightContent={<ImageResp src={imagens.nordwood} />}
               />
             </SectionWindowFull>
           )}

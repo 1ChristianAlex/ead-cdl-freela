@@ -1,8 +1,7 @@
 import React, { FC, useState } from "react";
 import { Carousel, Row, Col } from "react-bootstrap";
-
+import { CaroselItem } from "./style";
 import { TitleSection, Text } from "..";
-import { Colors } from "../../styles/colors";
 
 interface ICarrouselText {
   carouselItem: {
@@ -27,7 +26,7 @@ const CarrouselText: FC<ICarrouselText> = ({ carouselItem, color }) => {
     >
       {carouselItem.map((itemCa, indexSlide) => {
         return (
-          <Carousel.Item key={`ca-${indexSlide}`} className="p-5">
+          <CaroselItem key={`ca-${indexSlide}`}>
             <Row className="">
               <Col md={12}>
                 {itemCa.title && (
@@ -46,7 +45,7 @@ const CarrouselText: FC<ICarrouselText> = ({ carouselItem, color }) => {
                 );
               })}
             </Row>
-          </Carousel.Item>
+          </CaroselItem>
         );
       })}
     </Carousel>
