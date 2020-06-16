@@ -86,9 +86,7 @@ const ModuleTree: React.FC<any> = ({ data }) => {
                     />
                   </TextConteiner>
                 }
-                ColRightContent={
-                  <ImageResponsive src={ph} className="vh-100 w-100" />
-                }
+                ColRightContent={<ImageResponsive src={ph} />}
               />
             </SectionWindowFull>
           )}
@@ -131,9 +129,7 @@ const ModuleTree: React.FC<any> = ({ data }) => {
                     />
                   </TextConteiner>
                 }
-                ColLeftContent={
-                  <ImageResponsive src={ph} className="vh-100 w-100" />
-                }
+                ColLeftContent={<ImageResponsive src={ph} />}
               />
             </SectionWindowFull>
           )}
@@ -172,9 +168,7 @@ const ModuleTree: React.FC<any> = ({ data }) => {
                     />
                   </TextConteiner>
                 }
-                ColRightContent={
-                  <ImageResponsive src={ph} className="vh-100 w-100" />
-                }
+                ColRightContent={<ImageResponsive src={ph} />}
               />
             </SectionWindowFull>
           )}
@@ -218,9 +212,7 @@ const ModuleTree: React.FC<any> = ({ data }) => {
                     />
                   </TextConteiner>
                 }
-                ColRightContent={
-                  <ImageResponsive src={ph} className="vh-100 w-100" />
-                }
+                ColRightContent={<ImageResponsive src={ph} />}
               />
             </SectionWindowFull>
           )}

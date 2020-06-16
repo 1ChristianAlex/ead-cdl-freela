@@ -39,7 +39,7 @@ const CarrouselText: FC<ICarrouselText> = ({ carouselItem, color }) => {
                 return (
                   <Col md={12} key={indexTExt * 6}>
                     <Text colors={color} size={18} className="p-2">
-                      <div dangerouslySetInnerHTML={{ __html: textItem }} />
+                      <span dangerouslySetInnerHTML={{ __html: textItem }} />
                     </Text>
                   </Col>
                 );

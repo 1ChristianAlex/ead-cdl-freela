@@ -29,7 +29,7 @@ export const query = graphql`
   }
 `;
 
-const ModuleFour: React.FC<any> = ({ data }) => {
+const ModuleFive: React.FC<any> = ({ data }) => {
   const [path, setPath] = useState<string[]>([]);
   useEffect(() => {
     const pathImage = [];
@@ -260,4 +260,4 @@ const ModuleFour: React.FC<any> = ({ data }) => {
   );
 };
 
-export default ModuleFour;
+export default ModuleFive;
